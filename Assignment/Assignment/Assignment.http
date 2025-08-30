@@ -1,0 +1,21 @@
+@Assignment_HostAddress = http://localhost:5077
+
+###
+POST {{Assignment_HostAddress}}/api/aggregation/location?city=New%20York&country=us
+Content-Type: application/json
+
+{
+  "city": "Athens",
+  "country": "GR",
+  "pageSize": 5,
+  "newsKeyword": "Tech",
+  "newsSortBy": "publishedAt",
+  "fromDate": "2025-08-02T00:00:00Z",
+  "toDate": "2025-09-02T23:59:59Z",
+  "minTemperature": 0,
+  "maxTemperature": 100
+}
+
+### 
+
+# "weatherCondition": "Rain",
